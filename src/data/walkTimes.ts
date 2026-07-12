@@ -15,6 +15,8 @@ const PLACE_WALK: Record<string, { minutes?: number; hint?: string }> = {
   'dine-legal': { minutes: 26 },
   'dine-atlantic': { minutes: 6 },
   'dine-piattini': { minutes: 2 },
+  'dine-krasi': { minutes: 6 },
+  'dine-la-voile': { hint: 'Same building as Newbury Guest House' },
   'station-south': { minutes: 25 },
   'station-logan': { hint: '~25–35 min by rideshare or SL1 + walk' },
   'station-back-bay': { minutes: 12 },
