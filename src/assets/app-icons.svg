@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg">
+  <!-- Home — brownstone steps -->
+  <symbol id="icon-home" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M4 20V10l8-6 8 6v10h-5v-6H9v6H4z"/>
+    <rect x="10" y="14" width="4" height="6" fill="currentColor" opacity="0.35"/>
+    <path fill="currentColor" opacity="0.5" d="M7 20h10v1H7v-1z"/>
+  </symbol>
+
+  <!-- Itinerary days -->
+  <symbol id="icon-days" viewBox="0 0 24 24">
+    <rect x="3" y="5" width="18" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+    <path stroke="currentColor" stroke-width="1.6" d="M3 9h18M8 3v4M16 3v4"/>
+    <circle cx="8" cy="14" r="1.3" fill="currentColor"/>
+    <circle cx="12" cy="14" r="1.3" fill="currentColor"/>
+    <circle cx="16" cy="14" r="1.3" fill="currentColor"/>
+    <circle cx="12" cy="17.5" r="1.3" fill="currentColor" opacity="0.55"/>
+  </symbol>
+
+  <symbol id="icon-calendar" viewBox="0 0 24 24">
+    <rect x="3" y="4" width="18" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+    <path stroke="currentColor" stroke-width="1.6" d="M3 9h18M8 2v4M16 2v4"/>
+    <path fill="currentColor" d="M7 12h4v4H7v-4zm6 0h4v4h-4v-4z"/>
+  </symbol>
+
+  <!-- Maps — pin on folded map -->
+  <symbol id="icon-maps" viewBox="0 0 24 24">
+    <path fill="none" stroke="currentColor" stroke-width="1.5" d="M4 7l5-2 5 2 6-2v12l-6 2-5-2-5 2V7z"/>
+    <path fill="currentColor" opacity="0.25" d="M9 5v15l5 2V7L9 5zm5 2l6 2v12l-6-2V7z"/>
+    <path fill="currentColor" d="M12 8.5a2.8 2.8 0 00-2.8 2.8c0 2.1 2.8 4.4 2.8 4.4s2.8-2.3 2.8-4.4A2.8 2.8 0 0012 8.5zm0 1.6a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"/>
+  </symbol>
+
+  <!-- Local lingo — speech bubble -->
+  <symbol id="icon-phrases" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M5 5h12a3 3 0 013 3v4a3 3 0 01-3 3h-5l-4 3.5V15H5a3 3 0 01-3-3V8a3 3 0 013-3z"/>
+    <path fill="currentColor" opacity="0.35" d="M7 10h8v1.2H7V10zm0 2.4h5.5v1.2H7v-1.2z"/>
+  </symbol>
+
+  <symbol id="icon-star" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M12 2l2.6 7.5H22l-6.2 4.5 2.4 7.5L12 17.8l-6.2 4.7 2.4-7.5L2 9.5h7.4L12 2z"/>
+  </symbol>
+
+  <!-- Before you go — suitcase -->
+  <symbol id="icon-setup" viewBox="0 0 24 24">
+    <rect x="6" y="8" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+    <path stroke="currentColor" stroke-width="1.6" d="M9 8V6a3 3 0 016 0v2"/>
+    <rect x="10" y="12" width="4" height="3" rx="0.5" fill="currentColor" opacity="0.45"/>
+    <circle cx="8.5" cy="19.5" r="1" fill="currentColor"/>
+    <circle cx="15.5" cy="19.5" r="1" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="icon-ticket" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M3 8a2 2 0 012-2h14a2 2 0 012 2v2.2a1.8 1.8 0 010 3.6V16a2 2 0 01-2 2H5a2 2 0 01-2-2v-2.2a1.8 1.8 0 010-3.6V8zm4 0v8m4-8v8"/>
+  </symbol>
+
+  <symbol id="icon-emergency" viewBox="0 0 24 24">
+    <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 2l9 4v6c0 5.5-3.8 10.7-9 12-5.2-1.3-9-6.5-9-12V6l9-4z"/>
+    <path fill="currentColor" d="M11 8h2v5h-2V8zm0 6.5h2v2.5h-2v-2.5z"/>
+  </symbol>
+
+  <symbol id="icon-more" viewBox="0 0 24 24">
+    <rect x="3" y="5" width="18" height="3" rx="1.5" fill="currentColor"/>
+    <rect x="3" y="10.5" width="18" height="3" rx="1.5" fill="currentColor"/>
+    <rect x="3" y="16" width="18" height="3" rx="1.5" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="icon-menu" viewBox="0 0 24 24">
+    <rect x="4" y="6" width="16" height="2.2" rx="1" fill="currentColor"/>
+    <rect x="4" y="11" width="16" height="2.2" rx="1" fill="currentColor"/>
+    <rect x="4" y="16" width="16" height="2.2" rx="1" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="icon-sun" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="4" fill="currentColor"/>
+    <path stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+  </symbol>
+
+  <symbol id="icon-moon" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M14 3a8 8 0 108 8 9 9 0 01-8-8z"/>
+  </symbol>
+
+  <symbol id="icon-phone" viewBox="0 0 24 24">
+    <rect x="7" y="3" width="10" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+    <circle cx="12" cy="17" r="1" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="icon-book" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M5 4h7v16H5a2 2 0 01-2-2V6a2 2 0 012-2zm9 0h5a2 2 0 012 2v12a2 2 0 01-2 2h-5V4z"/>
+    <path fill="currentColor" opacity="0.35" d="M7 7h3v1H7V7zm0 3h5v1H7v-1z"/>
+  </symbol>
+
+  <symbol id="icon-journal" viewBox="0 0 24 24">
+    <path fill="none" stroke="currentColor" stroke-width="1.6" d="M6 4.5h10.5A2.5 2.5 0 0119 7v12H8.5A2.5 2.5 0 016 16.5v-12z"/>
+    <path fill="currentColor" opacity="0.3" d="M8 4.5h2v14H8z"/>
+    <path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" d="M11 9.5h5M11 13h5"/>
+    <path fill="currentColor" d="M5.3 18.7l3.1-.8-2.3-2.3-.8 3.1zm3.7-1.5l5.6-5.6a1.1 1.1 0 000-1.6l-.6-.6a1.1 1.1 0 00-1.6 0l-5.6 5.6 2.2 2.2z"/>
+  </symbol>
+
+  <!-- Trip bingo — checklist grid -->
+  <symbol id="icon-bingo" viewBox="0 0 24 24">
+    <rect x="4" y="4" width="16" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <path stroke="currentColor" stroke-width="1.5" d="M4 10h16M4 16h16M10 4v16M16 4v16"/>
+    <path fill="currentColor" d="M6.2 12.8l1.4 1.4 2.8-3"/>
+    <path fill="currentColor" d="M12.2 7.2l1.4 1.4 2.8-3"/>
+    <circle cx="18" cy="18.5" r="1.2" fill="currentColor" opacity="0.5"/>
+  </symbol>
+
+  <!-- Legacy alias -->
+  <symbol id="icon-beer" viewBox="0 0 24 24">
+    <use href="#icon-bingo"/>
+  </symbol>
+
+  <symbol id="icon-wallet" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M4 7a3 3 0 013-3h11a2 2 0 012 2v1H7a3 3 0 000 6h13v5a3 3 0 01-3 3H7a3 3 0 01-3-3V7z"/>
+    <circle cx="16.5" cy="13" r="1.25" fill="currentColor" opacity="0.85"/>
+  </symbol>
+
+  <symbol id="icon-currency" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/>
+    <path fill="currentColor" d="M12 7v10M9.5 9.5c0-1.2 1.1-2 2.5-2s2.5.8 2.5 2-1.1 2-2.5 2.3S9.5 13.8 9.5 15c0 1.2 1.1 2 2.5 2s2.5-.8 2.5-2"/>
+  </symbol>
+
+  <!-- Fallout Boston — vault door -->
+  <symbol id="icon-fallout" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="9.2" fill="currentColor" opacity="0.18"/>
+    <circle cx="12" cy="12" r="9.2" fill="none" stroke="currentColor" stroke-width="1.7"/>
+    <circle cx="12" cy="12" r="5.6" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <circle cx="12" cy="12" r="2.2" fill="currentColor"/>
+    <path fill="currentColor" d="M11.2 3.2h1.6v2.8h-1.6zm0 14.8h1.6v2.8h-1.6zM3.2 11.2h2.8v1.6H3.2zm14.8 0h2.8v1.6h-2.8z"/>
+  </symbol>
+
+  <symbol id="icon-fo-diamond" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M4 10.2L12 3.5l8 6.7V20H4V10.2zm2.2 1.3V18h11.6v-6.5L12 6.2 6.2 11.5z"/>
+    <path fill="currentColor" opacity="0.45" d="M9 14h6v4H9z"/>
+  </symbol>
+
+  <symbol id="icon-fo-landmark" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M12 2.5l7.5 4.2v2.1H4.5V6.7L12 2.5z"/>
+    <path fill="currentColor" d="M6.2 10h11.6v10H6.2V10zm2.3 2.2v5.5h1.8v-5.5H8.5zm5.2 0v5.5h1.8v-5.5h-1.8z"/>
+  </symbol>
+
+  <symbol id="icon-fo-ship" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M11.2 3.5h1.6v8.2h-1.6z"/>
+    <path fill="currentColor" d="M8.5 6.2h7v1.5h-7z"/>
+    <path fill="currentColor" d="M4.2 15.2l1.8-5.5h12l1.8 5.5H4.2zm1.5 1.5h12.6l-1 2.8H6.7l-1-2.8z"/>
+  </symbol>
+
+  <symbol id="icon-fo-church" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M11.15 2.2h1.7v2.1h2.1v1.6h-2.1v1.4l4.4 2.2v11.3H6.75V9.5l4.4-2.2V5.9H9.05V4.3h2.1V2.2z"/>
+    <path fill="currentColor" opacity="0.4" d="M11.1 14.2h1.8v6.1h-1.8z"/>
+  </symbol>
+
+  <symbol id="icon-fo-park" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M12 3.2c-3.2 0-5.8 2.4-5.8 5.5 0 2.5 1.6 4.6 3.9 5.4V20h3.8v-5.9c2.3-.8 3.9-2.9 3.9-5.4 0-3.1-2.6-5.5-5.8-5.5z"/>
+    <path fill="currentColor" d="M5.5 19.2h13v1.7h-13z"/>
+  </symbol>
+
+  <symbol id="icon-fo-tower" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M10.2 8.2L12 4.2l1.8 4V20h-3.6V8.2z"/>
+    <path fill="currentColor" opacity="0.4" d="M10.8 10.2h2.4v2.2h-2.4zm0 3.2h2.4v2.2h-2.4z"/>
+    <path fill="currentColor" d="M6.5 19.2h11v1.7h-11z"/>
+  </symbol>
+
+  <symbol id="icon-fo-lab" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M9.2 3.2h5.6v1.5h-1.5v5.3l4.4 8.2a2.7 2.7 0 01-2.4 4H8.7a2.7 2.7 0 01-2.4-4l4.4-8.2V4.7H9.2V3.2zm.9 8.4L6.8 18.3c-.2.4 0 1 .5 1h9.4c.5 0 .7-.6.5-1l-3.3-6.7H10.1z"/>
+  </symbol>
+
+  <symbol id="icon-fo-neon" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M4.2 6.2h15.6A1.8 1.8 0 0121.6 8v8a1.8 1.8 0 01-1.8 1.8H4.2A1.8 1.8 0 012.4 16V8a1.8 1.8 0 011.8-1.8zm1.6 2.4v1.6h5V8.6h-5zm0 3.2v1.6h7.5v-1.6H5.8z"/>
+    <circle cx="17.2" cy="12" r="1.5" fill="currentColor" opacity="0.55"/>
+  </symbol>
+</svg>

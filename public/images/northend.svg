@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="North End Boston Italian neighborhood">
+  <defs>
+    <linearGradient id="ne-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8c8a0"/>
+      <stop offset="100%" stop-color="#6a3028"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#ne-sky)"/>
+  <rect y="280" width="800" height="170" fill="#4a3830"/>
+  <g transform="translate(80, 120)">
+    <rect x="0" y="60" width="90" height="120" fill="#c85040"/>
+    <rect x="100" y="40" width="75" height="140" fill="#d06048"/>
+    <rect x="185" y="70" width="85" height="110" fill="#b84838"/>
+    <rect x="280" y="50" width="70" height="130" fill="#c85842"/>
+    <rect x="360" y="65" width="95" height="115" fill="#d06850"/>
+    <path d="M35 60 L55 20 L75 60 Z" fill="#5a2820"/>
+    <path d="M130 40 L155 0 L180 40 Z" fill="#5a2820"/>
+    <path d="M400 65 L425 25 L450 65 Z" fill="#5a2820"/>
+    <rect x="20" y="90" width="14" height="22" fill="#3a2018" opacity="0.6"/>
+    <rect x="115" y="75" width="12" height="20" fill="#3a2018" opacity="0.6"/>
+    <rect x="300" y="85" width="14" height="22" fill="#3a2018" opacity="0.6"/>
+  </g>
+  <g transform="translate(520, 200)">
+    <ellipse cx="60" cy="80" rx="55" ry="25" fill="#f8e8d0" stroke="#c8a878" stroke-width="2"/>
+    <rect x="30" y="55" width="60" height="30" fill="#f0d8b8" rx="4"/>
+    <circle cx="90" cy="70" r="8" fill="#8b2820"/>
+  </g>
+  <text x="400" y="400" text-anchor="middle" fill="#fff" font-family="Georgia, serif" font-size="40" font-weight="700">North End</text>
+  <text x="400" y="430" text-anchor="middle" fill="#ffe0d0" font-family="Georgia, serif" font-size="16">Cannoli · Pasta · Hanover Street</text>
+</svg>

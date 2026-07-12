@@ -1,0 +1,223 @@
+export type FalloutArea =
+  | 'fenway'
+  | 'backbay'
+  | 'downtown'
+  | 'northend'
+  | 'charlestown'
+  | 'cambridge';
+
+export interface FalloutLocation {
+  id: string;
+  gameName: string;
+  realName: string;
+  address: string;
+  lat: number;
+  lng: number;
+  area: FalloutArea;
+  icon: string;
+  tip: string;
+  tripTip?: string;
+}
+
+export const FALLOUT_AREA_LABEL: Record<FalloutArea, string> = {
+  fenway: 'Fenway · Kenmore',
+  backbay: 'Back Bay',
+  downtown: 'Downtown',
+  northend: 'North End · Freedom Trail',
+  charlestown: 'Charlestown',
+  cambridge: 'Cambridge',
+};
+
+/** Real-world Boston spots that map to Fallout 4 landmarks — visit-friendly for this trip. */
+export const FALLOUT_LOCATIONS: FalloutLocation[] = [
+  {
+    id: 'fo-diamond',
+    gameName: 'Diamond City',
+    realName: 'Fenway Park',
+    address: '4 Jersey St, Boston, MA 02215',
+    lat: 42.3467,
+    lng: -71.0972,
+    area: 'fenway',
+    icon: 'fo-diamond',
+    tip: 'The Green Monster wall and stadium bowl are the clearest Diamond City stand-ins in the Commonwealth.',
+    tripTip: 'Easy add-on for a Fenway day · ~12 min walk from the guest house',
+  },
+  {
+    id: 'fo-bunker-hill',
+    gameName: 'Bunker Hill Monument',
+    realName: 'Bunker Hill Monument',
+    address: 'Monument Sq, Charlestown, MA 02129',
+    lat: 42.3763,
+    lng: -71.0608,
+    area: 'charlestown',
+    icon: 'fo-landmark',
+    tip: 'Same obelisk as in-game — climb (or just circle) the real Revolutionary War memorial.',
+    tripTip: 'Pairs with USS Constitution after the Mon food tour',
+  },
+  {
+    id: 'fo-constitution',
+    gameName: 'USS Constitution',
+    realName: 'USS Constitution',
+    address: 'Charlestown Navy Yard, Boston, MA 02129',
+    lat: 42.3724,
+    lng: -71.0565,
+    area: 'charlestown',
+    icon: 'fo-ship',
+    tip: 'Old Ironsides is still docked — free ship tours when open; museum next door.',
+    tripTip: 'Same Navy Yard stop as Mon harbor plans',
+  },
+  {
+    id: 'fo-old-north',
+    gameName: 'Old North Church',
+    realName: 'Old North Church',
+    address: '193 Salem St, Boston, MA 02113',
+    lat: 42.3664,
+    lng: -71.0544,
+    area: 'northend',
+    icon: 'fo-church',
+    tip: '"One if by land…" steeple from the Freedom Trail — also a North End landmark in Fallout 4.',
+    tripTip: 'Steps from the food-tour neighborhood on Mon',
+  },
+  {
+    id: 'fo-paul-revere',
+    gameName: 'Paul Revere House',
+    realName: 'Paul Revere House',
+    address: '19 N Square, Boston, MA 02113',
+    lat: 42.3637,
+    lng: -71.0537,
+    area: 'northend',
+    icon: 'fo-landmark',
+    tip: 'Oldest house in downtown Boston — Freedom Trail stop mirrored in the game’s North End.',
+    tripTip: 'Combine with cannoli runs after the tour',
+  },
+  {
+    id: 'fo-common',
+    gameName: 'Boston Common',
+    realName: 'Boston Common',
+    address: '139 Tremont St, Boston, MA 02108',
+    lat: 42.3551,
+    lng: -71.0656,
+    area: 'downtown',
+    icon: 'fo-park',
+    tip: 'The city’s oldest park — central hub in both real Boston and the game map.',
+    tripTip: '~18 min walk from Newbury Guest House',
+  },
+  {
+    id: 'fo-garden',
+    gameName: 'Public Garden / Swan Pond',
+    realName: 'Boston Public Garden',
+    address: '4 Charles St, Boston, MA 02116',
+    lat: 42.3541,
+    lng: -71.0702,
+    area: 'backbay',
+    icon: 'fo-park',
+    tip: 'Swan Boats and the lagoon echo the Public Garden area on the FO4 map.',
+    tripTip: 'Closest Fallout landmark to the hotel',
+  },
+  {
+    id: 'fo-trinity',
+    gameName: 'Trinity Plaza / Trinity Church',
+    realName: 'Trinity Church',
+    address: '206 Clarendon St, Boston, MA 02116',
+    lat: 42.3499,
+    lng: -71.0754,
+    area: 'backbay',
+    icon: 'fo-church',
+    tip: 'Copley’s Romanesque landmark — Trinity Plaza sits near this corner of the in-game Back Bay.',
+    tripTip: 'Two blocks from Newbury St',
+  },
+  {
+    id: 'fo-bpl',
+    gameName: 'Boston Public Library',
+    realName: 'Boston Public Library',
+    address: '700 Boylston St, Boston, MA 02116',
+    lat: 42.3494,
+    lng: -71.078,
+    area: 'backbay',
+    icon: 'fo-landmark',
+    tip: 'McKim Building facing Copley — a recognizable civic pile in the Commonwealth skyline.',
+    tripTip: 'Across the square from Trinity',
+  },
+  {
+    id: 'fo-faneuil',
+    gameName: 'Faneuil Hall',
+    realName: 'Faneuil Hall Marketplace',
+    address: '4 S Market St, Boston, MA 02109',
+    lat: 42.3601,
+    lng: -71.0547,
+    area: 'downtown',
+    icon: 'fo-landmark',
+    tip: 'Quincy Market + Faneuil Hall — downtown hub that survives (in altered form) in FO4.',
+    tripTip: 'Near the food-tour meetup on Blackstone St',
+  },
+  {
+    id: 'fo-state-house',
+    gameName: 'Massachusetts State House',
+    realName: 'Massachusetts State House',
+    address: '24 Beacon St, Boston, MA 02133',
+    lat: 42.3588,
+    lng: -71.0636,
+    area: 'downtown',
+    icon: 'fo-landmark',
+    tip: 'Gold dome overlooking the Common — a classic Boston silhouette in and out of the game.',
+  },
+  {
+    id: 'fo-custom-house',
+    gameName: 'Custom House',
+    realName: 'Custom House Tower',
+    address: '3 McKinley Square, Boston, MA 02109',
+    lat: 42.3591,
+    lng: -71.0534,
+    area: 'downtown',
+    icon: 'fo-tower',
+    tip: 'Historic tower near the waterfront — Custom House District vibes on the FO4 map.',
+  },
+  {
+    id: 'fo-goodneighbor',
+    gameName: 'Goodneighbor',
+    realName: 'Theater District / Combat Zone',
+    address: 'Washington St & Stuart St, Boston, MA 02116',
+    lat: 42.3515,
+    lng: -71.0645,
+    area: 'downtown',
+    icon: 'fo-neon',
+    tip: 'Goodneighbor channels the old Combat Zone / Theater District — neon, theaters, and edge-of-downtown grit.',
+    tripTip: 'Walkable from Back Bay via Boylston',
+  },
+  {
+    id: 'fo-esplanade',
+    gameName: 'Charles River',
+    realName: 'Esplanade / Charles River',
+    address: 'Storrow Dr, Boston, MA 02116',
+    lat: 42.3555,
+    lng: -71.0755,
+    area: 'backbay',
+    icon: 'fo-park',
+    tip: 'The river that splits Boston and Cambridge — major FO4 map feature you can stroll in real life.',
+    tripTip: 'Cross via Mass Ave or Longfellow for Cambridge day',
+  },
+  {
+    id: 'fo-mit',
+    gameName: 'Cambridge / CIT',
+    realName: 'MIT campus',
+    address: '77 Massachusetts Ave, Cambridge, MA 02139',
+    lat: 42.3591,
+    lng: -71.0935,
+    area: 'cambridge',
+    icon: 'fo-lab',
+    tip: 'FO4’s Cambridge Institute of Technology riffs on MIT — Stata Center and the Great Dome are the photo ops.',
+    tripTip: 'Tue Cambridge day · Red Line to Kendall/MIT',
+  },
+  {
+    id: 'fo-mos',
+    gameName: 'Cambridge Science Center',
+    realName: 'Museum of Science',
+    address: '1 Science Park, Boston, MA 02114',
+    lat: 42.3678,
+    lng: -71.0709,
+    area: 'cambridge',
+    icon: 'fo-lab',
+    tip: 'Science-park complex on the Charles — closest real counterpart to FO4’s Cambridge Science Center energy.',
+    tripTip: 'Rain backup already on the Tue itinerary',
+  },
+];

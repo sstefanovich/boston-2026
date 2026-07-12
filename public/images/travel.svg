@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Boston Logan travel">
+  <defs>
+    <linearGradient id="tr-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b0d0f0"/>
+      <stop offset="100%" stop-color="#2a4058"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#tr-sky)"/>
+  <rect y="340" width="800" height="110" fill="#3a4858"/>
+  <line x1="0" y1="340" x2="800" y2="340" stroke="#f0d040" stroke-width="4" stroke-dasharray="40 20"/>
+  <g transform="translate(250, 160)">
+    <ellipse cx="150" cy="80" rx="140" ry="35" fill="#e8ecf0"/>
+    <path d="M20 80 L280 80 L250 30 L50 30 Z" fill="#d0d8e0"/>
+    <path d="M50 30 L80 80 L50 80 Z" fill="#a0b0c0"/>
+    <rect x="120" y="45" width="60" height="25" fill="#88c0f0" opacity="0.6"/>
+    <circle cx="70" cy="85" r="12" fill="#4a5058"/>
+    <circle cx="230" cy="85" r="12" fill="#4a5058"/>
+  </g>
+  <g fill="#5a6878" transform="translate(50, 250)">
+    <rect x="0" y="0" width="120" height="50" rx="4"/>
+    <rect x="140" y="10" width="80" height="40" rx="4" opacity="0.7"/>
+    <text x="60" y="32" text-anchor="middle" fill="#c8d8e8" font-family="sans-serif" font-size="14" font-weight="700">LOGAN</text>
+  </g>
+  <text x="400" y="400" text-anchor="middle" fill="#fff" font-family="Georgia, serif" font-size="40" font-weight="700">Travel</text>
+  <text x="400" y="430" text-anchor="middle" fill="#d0e8ff" font-family="Georgia, serif" font-size="16">Logan · South Station · The T</text>
+</svg>

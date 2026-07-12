@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Cambridge Harvard MIT">
+  <defs>
+    <linearGradient id="cam-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a8c8e8"/>
+      <stop offset="100%" stop-color="#3a2848"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#cam-sky)"/>
+  <rect y="300" width="800" height="150" fill="#2a4030"/>
+  <g transform="translate(200, 100)">
+    <rect x="0" y="80" width="180" height="120" fill="#8b2820"/>
+    <rect x="30" y="40" width="120" height="50" fill="#7a2020"/>
+    <rect x="60" y="10" width="60" height="35" fill="#6a1818"/>
+    <rect x="75" y="0" width="30" height="15" fill="#5a1010"/>
+    <rect x="40" y="110" width="25" height="40" fill="#4a1010" opacity="0.5"/>
+    <rect x="115" y="110" width="25" height="40" fill="#4a1010" opacity="0.5"/>
+    <text x="90" y="155" text-anchor="middle" fill="#f0d8a0" font-family="Georgia, serif" font-size="14" font-weight="700">VERITAS</text>
+  </g>
+  <g transform="translate(480, 130)" fill="#c8b8a8">
+    <path d="M0 120 L40 20 L80 120 Z"/>
+    <path d="M60 120 L100 40 L140 120 Z"/>
+    <path d="M120 120 L180 0 L240 120 Z" fill="#e0d0c0"/>
+    <rect x="0" y="120" width="240" height="60" fill="#a89888"/>
+  </g>
+  <text x="400" y="400" text-anchor="middle" fill="#fff" font-family="Georgia, serif" font-size="40" font-weight="700">Cambridge</text>
+  <text x="400" y="430" text-anchor="middle" fill="#e8d8f0" font-family="Georgia, serif" font-size="16">Harvard · MIT · Charles River</text>
+</svg>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Fenway Park Boston Red Sox">
+  <defs>
+    <linearGradient id="sp-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#88b8e0"/>
+      <stop offset="100%" stop-color="#1a4028"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#sp-sky)"/>
+  <ellipse cx="400" cy="320" rx="320" ry="100" fill="#2a6838"/>
+  <ellipse cx="400" cy="310" rx="280" ry="85" fill="#3a7848"/>
+  <path d="M120 310 Q400 180 680 310" stroke="#c83838" stroke-width="28" fill="none"/>
+  <rect x="80" y="200" width="40" height="120" fill="#2a5830"/>
+  <rect x="680" y="200" width="40" height="120" fill="#2a5830"/>
+  <g transform="translate(380, 250)">
+    <circle cx="0" cy="0" r="22" fill="#fff" stroke="#c83838" stroke-width="2"/>
+    <path d="M-12 -8 Q0 8 12 -8" stroke="#c83838" stroke-width="2" fill="none"/>
+    <path d="M-12 8 Q0 -8 12 8" stroke="#c83838" stroke-width="2" fill="none"/>
+  </g>
+  <text x="400" y="400" text-anchor="middle" fill="#fff" font-family="Georgia, serif" font-size="40" font-weight="700">Fenway</text>
+  <text x="400" y="430" text-anchor="middle" fill="#c8f0d0" font-family="Georgia, serif" font-size="16">Red Sox · Green Monster · Lansdowne</text>
+</svg>

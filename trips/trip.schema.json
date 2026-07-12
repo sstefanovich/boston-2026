@@ -1,0 +1,354 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/steve/travel-app/trip.schema.json",
+  "title": "Travel App Trip",
+  "description": "Canonical trip definition for generating a standalone travel companion app. Calendar event times use YYYYMMDDHHMMSS in meta.timezone. Timeline imageTheme keys map to themeImages.",
+  "type": "object",
+  "required": ["version", "meta", "timeline", "calendarEvents"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "version": { "type": "string", "const": "1.0" },
+    "meta": { "$ref": "#/$defs/meta" },
+    "themeImages": { "$ref": "#/$defs/themeImages" },
+    "members": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Default expense-splitting group (editable in app)"
+    },
+    "expenseCategories": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "places": { "$ref": "#/$defs/places" },
+    "flights": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/flight" }
+    },
+    "timeline": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/timelineDay" },
+      "minItems": 1
+    },
+    "calendarEvents": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/calendarEvent" }
+    },
+    "weatherByDay": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/weatherLocation" }
+    },
+    "walkTimes": { "$ref": "#/$defs/walkTimes" },
+    "transitByDay": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": { "$ref": "#/$defs/transitLink" }
+      }
+    },
+    "phrases": { "$ref": "#/$defs/phrases" },
+    "quickRefSlang": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/quickRefEntry" }
+    },
+    "travelApps": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/travelApp" }
+    },
+    "emergency": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/emergencyContact" }
+    },
+    "iconChecklist": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": { "type": "string" }
+      }
+    },
+    "usefulLinks": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/labeledUrl" }
+    },
+    "tripBingo": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/bingoItem" }
+    },
+    "setup": { "$ref": "#/$defs/setup" }
+  },
+  "$defs": {
+    "cityTheme": {
+      "type": "string",
+      "enum": ["boston", "northend", "harbor", "cambridge", "sports", "travel", "food"]
+    },
+    "placeKind": {
+      "type": "string",
+      "enum": ["hotel", "meeting", "station", "restaurant", "sight"]
+    },
+    "meta": {
+      "type": "object",
+      "required": ["id", "title", "subtitle", "timezone", "dateRange", "branding"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "description": "Slug, e.g. boston-2026" },
+        "title": { "type": "string" },
+        "subtitle": { "type": "string" },
+        "timezone": { "type": "string", "description": "IANA timezone for calendar events and weather" },
+        "homeTimezone": { "type": "string", "description": "Optional traveler home timezone for flight display notes" },
+        "dateRange": {
+          "type": "object",
+          "required": ["start", "end"],
+          "properties": {
+            "start": { "type": "string", "format": "date" },
+            "end": { "type": "string", "format": "date" }
+          }
+        },
+        "dayIdPattern": {
+          "type": "string",
+          "description": "How day IDs are formed, e.g. aug{N} for Aug 8 → aug8"
+        },
+        "primaryHotelId": { "type": "string" },
+        "branding": {
+          "type": "object",
+          "required": ["appId", "appName"],
+          "properties": {
+            "appId": { "type": "string" },
+            "appName": { "type": "string" },
+            "packageName": { "type": "string" }
+          }
+        },
+        "features": {
+          "type": "object",
+          "properties": {
+            "currency": { "type": "boolean" },
+            "expenses": { "type": "boolean" },
+            "bingo": { "type": "boolean" },
+            "phrases": { "type": "boolean" }
+          }
+        }
+      }
+    },
+    "themeImages": {
+      "type": "object",
+      "description": "Hero image paths keyed by city theme (under public/)",
+      "additionalProperties": { "type": "string" }
+    },
+    "place": {
+      "type": "object",
+      "required": ["id", "name", "address", "city", "theme", "kind"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "address": { "type": "string" },
+        "city": { "type": "string" },
+        "lat": { "type": "number" },
+        "lng": { "type": "number" },
+        "theme": { "$ref": "#/$defs/cityTheme" },
+        "kind": { "$ref": "#/$defs/placeKind" },
+        "notes": { "type": "string" },
+        "phone": { "type": "string" },
+        "website": { "type": "string" }
+      }
+    },
+    "places": {
+      "type": "object",
+      "properties": {
+        "hotels": { "type": "array", "items": { "$ref": "#/$defs/place" } },
+        "stations": { "type": "array", "items": { "$ref": "#/$defs/place" } },
+        "restaurants": { "type": "array", "items": { "$ref": "#/$defs/place" } },
+        "sights": { "type": "array", "items": { "$ref": "#/$defs/place" } }
+      }
+    },
+    "flightEndpoint": {
+      "type": "object",
+      "required": ["airport", "city", "date", "time"],
+      "properties": {
+        "airport": { "type": "string" },
+        "city": { "type": "string" },
+        "date": { "type": "string", "format": "date" },
+        "time": { "type": "string", "description": "HH:mm local" },
+        "timezone": { "type": "string" }
+      }
+    },
+    "flight": {
+      "type": "object",
+      "required": ["id", "flightNumber", "airline", "dayId", "depart", "arrive"],
+      "properties": {
+        "id": { "type": "string" },
+        "flightNumber": { "type": "string" },
+        "airline": { "type": "string" },
+        "cabin": { "type": "string" },
+        "dayId": { "type": "string" },
+        "depart": { "$ref": "#/$defs/flightEndpoint" },
+        "arrive": { "$ref": "#/$defs/flightEndpoint" },
+        "calendarEventId": { "type": "string" }
+      }
+    },
+    "dontMissEntry": {
+      "type": "object",
+      "required": ["text"],
+      "properties": {
+        "text": { "type": "string" },
+        "address": { "type": "string" },
+        "mapQuery": { "type": "string" }
+      }
+    },
+    "timelineDay": {
+      "type": "object",
+      "required": ["id", "date", "weekday", "where", "highlights", "theme", "imageTheme", "dontMiss"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "date": { "type": "string" },
+        "weekday": { "type": "string" },
+        "where": { "type": "string" },
+        "highlights": { "type": "string" },
+        "theme": { "$ref": "#/$defs/cityTheme" },
+        "imageTheme": { "$ref": "#/$defs/cityTheme" },
+        "freeTime": { "type": "string" },
+        "dontMiss": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/dontMissEntry" }
+        },
+        "rain": { "type": "string" },
+        "rainMapQuery": { "type": "string" }
+      }
+    },
+    "calendarEvent": {
+      "type": "object",
+      "required": ["id", "title", "dateLabel", "dayId", "start", "end", "theme"],
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "dateLabel": { "type": "string" },
+        "dayId": { "type": "string" },
+        "start": { "type": "string", "pattern": "^\\d{14}$" },
+        "end": { "type": "string", "pattern": "^\\d{14}$" },
+        "location": { "type": "string" },
+        "address": { "type": "string" },
+        "details": { "type": "string" },
+        "theme": { "$ref": "#/$defs/cityTheme" },
+        "mapQuery": { "type": "string" },
+        "website": { "type": "string" }
+      }
+    },
+    "weatherLocation": {
+      "type": "object",
+      "required": ["label", "lat", "lng"],
+      "properties": {
+        "label": { "type": "string" },
+        "lat": { "type": "number" },
+        "lng": { "type": "number" }
+      }
+    },
+    "walkTimes": {
+      "type": "object",
+      "required": ["fromPlaceId", "hints"],
+      "properties": {
+        "fromPlaceId": { "type": "string" },
+        "fromPlaceLabel": { "type": "string" },
+        "hints": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "minutes": { "type": "integer" },
+              "hint": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "transitLink": {
+      "type": "object",
+      "required": ["label", "url"],
+      "properties": {
+        "label": { "type": "string" },
+        "url": { "type": "string", "format": "uri" },
+        "note": { "type": "string" }
+      }
+    },
+    "phrase": {
+      "type": "object",
+      "required": ["foreign", "sounds", "english"],
+      "properties": {
+        "foreign": { "type": "string" },
+        "sounds": { "type": "string" },
+        "english": { "type": "string" },
+        "speakLang": { "type": "string" }
+      }
+    },
+    "phrases": {
+      "type": "object",
+      "properties": {
+        "slang": { "type": "array", "items": { "$ref": "#/$defs/phrase" } },
+        "dishes": { "type": "array", "items": { "$ref": "#/$defs/phrase" } }
+      }
+    },
+    "quickRefEntry": {
+      "type": "object",
+      "required": ["label", "slang", "meaning"],
+      "properties": {
+        "label": { "type": "string" },
+        "slang": { "type": "string" },
+        "meaning": { "type": "string" }
+      }
+    },
+    "travelApp": {
+      "type": "object",
+      "required": ["name", "why"],
+      "properties": {
+        "name": { "type": "string" },
+        "why": { "type": "string" },
+        "packageId": { "type": "string" },
+        "webUrl": { "type": "string", "format": "uri" },
+        "owners": { "type": "string" }
+      }
+    },
+    "emergencyContact": {
+      "type": "object",
+      "required": ["label", "value", "tel"],
+      "properties": {
+        "label": { "type": "string" },
+        "value": { "type": "string" },
+        "tel": { "type": "string" }
+      }
+    },
+    "labeledUrl": {
+      "type": "object",
+      "required": ["label", "url"],
+      "properties": {
+        "label": { "type": "string" },
+        "url": { "type": "string", "format": "uri" }
+      }
+    },
+    "bingoItem": {
+      "type": "object",
+      "required": ["id", "label", "emoji", "region"],
+      "properties": {
+        "id": { "type": "string" },
+        "label": { "type": "string" },
+        "emoji": { "type": "string" },
+        "region": { "type": "string" },
+        "mapQuery": { "type": "string" },
+        "placeId": { "type": "string" }
+      }
+    },
+    "setup": {
+      "type": "object",
+      "properties": {
+        "heroSubtitle": { "type": "string" },
+        "flightsNote": { "type": "string" },
+        "gettingThere": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "packAndPrep": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}
