@@ -10,8 +10,13 @@ export const TRANSIT_BY_DAY: Record<string, TransitLink[]> = {
     { label: 'Logan Airport', url: 'https://www.massport.com/logan-airport/', note: 'UA1117 arrives 12:47 PM' },
   ],
   aug9: [
-    { label: 'MBTA — The T', url: 'https://www.mbta.com/', note: 'Subway & buses' },
-    { label: 'Freedom Trail map', url: 'https://www.thefreedomtrail.org/', note: 'Mostly walking' },
+    {
+      label: 'Old Town Trolley',
+      url: 'https://www.trolleytours.com/boston',
+      note: 'Hop-on hop-off all day · nearest stop Copley Square / Trinity Church',
+    },
+    { label: 'MBTA — The T', url: 'https://www.mbta.com/', note: 'Backup if you skip a trolley loop' },
+    { label: 'Freedom Trail map', url: 'https://www.thefreedomtrail.org/', note: 'Walk segments between trolley stops' },
   ],
   aug10: [
     {

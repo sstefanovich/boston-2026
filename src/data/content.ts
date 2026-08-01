@@ -191,6 +191,19 @@ export const MEETING_POINTS: Place[] = [
       'Booking YPWZK2GG · Mon 10 Aug 12:00 PM · 6 travellers (Susan Stefanovich) · Meet outside RMV / Boston Public Market entrance · arrive 5–10 min early · Glass-and-metal awning by Surface Rd & Hanover St bus stop · MassDOT sign',
     website: 'https://www.urbanadventures.com/en/boston/boston-north-end-food-tour',
   },
+  {
+    id: 'meet-old-town-trolley',
+    name: 'Old Town Trolley — Copley Square stop',
+    address: 'Copley Square / Trinity Church, Boston, MA 02116',
+    city: 'Boston',
+    lat: 42.3499,
+    lng: -71.0765,
+    theme: 'boston',
+    kind: 'meeting',
+    notes:
+      'Sun 9 Aug · all-day hop-on hop-off · start at any stop · nearest to hotel: Copley Square / Trinity Church (Back Bay loop) · show ticket to conductor',
+    website: 'https://www.trolleytours.com/boston',
+  },
 ];
 
 export const RESTAURANTS: Place[] = [
@@ -411,17 +424,22 @@ export const TIMELINE: TimelineDay[] = [
     id: 'aug9',
     date: 'Sun 9 Aug',
     weekday: 'Sunday',
-    where: 'Boston',
-    highlights: 'Freedom Trail · Faneuil Hall · Piattini 7 PM',
+    where: 'Boston · hop-on trolley',
+    highlights: 'Old Town Trolley all day · Freedom Trail stops · Piattini 7 PM',
     theme: 'boston',
     image: CITY_IMAGES.boston,
-    freeTime: '~Until 7 PM dinner',
+    freeTime: 'Trolley all day · dinner 7 PM',
     dontMiss: [
+      dm(
+        '★ Old Town Trolley — hop-on hop-off all day',
+        'Old Town Trolley Copley Square Boston',
+        'Copley Square / Trinity Church, Boston, MA 02116'
+      ),
+      dm('Nearest stop: Copley Square / Trinity Church', 'Trinity Church Copley Square Boston'),
       dm('★ Dinner — Piattini 7 PM', 'Piattini 226 Newbury St Boston', '226 Newbury St, Boston, MA 02116'),
-      dm('★ Freedom Trail (2.5 mi)', 'Freedom Trail Boston', 'Boston Common, 139 Tremont St, Boston, MA'),
+      dm('★ Freedom Trail highlights via trolley stops', 'Freedom Trail Boston', 'Boston Common, 139 Tremont St, Boston, MA'),
       dm('★ Public Garden & swan boats', 'Public Garden Boston', '4 Charles St, Boston, MA 02116'),
-      dm('Quincy Market lunch', 'Quincy Market Boston', '4 S Market St, Boston, MA 02109'),
-      dm('Beacon Hill cobblestones', 'Acorn Street Beacon Hill Boston'),
+      dm('Quincy Market / Faneuil Hall stop', 'Quincy Market Boston', '4 S Market St, Boston, MA 02109'),
     ],
     rain: 'Boston Tea Party Ships & Museum',
     rainMapQuery: 'Boston Tea Party Ships and Museum',
@@ -526,6 +544,21 @@ export const CALENDAR_EVENTS: TripEvent[] = [
     theme: 'food',
     mapQuery: 'Atlantic Fish 761 Boylston St Boston',
     website: 'https://www.atlanticfish.com/',
+  },
+  {
+    id: 'e-old-town-trolley',
+    title: 'Old Town Trolley — hop-on hop-off',
+    dateLabel: 'Sun 9 Aug',
+    dayId: 'aug9',
+    start: '20260809090000',
+    end: '20260809170000',
+    location: 'Old Town Trolley (any stop)',
+    address: 'Copley Square / Trinity Church, Boston, MA 02116',
+    details:
+      'All-day hop-on hop-off · start at any stop · nearest to hotel: Copley Square / Trinity Church · show ticket to conductor · dinner Piattini 7 PM',
+    theme: 'boston',
+    mapQuery: 'Old Town Trolley Copley Square Boston',
+    website: 'https://www.trolleytours.com/boston',
   },
   {
     id: 'e-piattini',

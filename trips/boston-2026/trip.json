@@ -101,6 +101,18 @@
         "kind": "meeting",
         "notes": "Booking YPWZK2GG · Mon 10 Aug 12:00 PM · 6 travellers (Susan Stefanovich) · Meet outside RMV / Boston Public Market entrance · arrive 5–10 min early · Glass-and-metal awning by Surface Rd & Hanover St bus stop · MassDOT sign",
         "website": "https://www.urbanadventures.com/en/boston/boston-north-end-food-tour"
+      },
+      {
+        "id": "meet-old-town-trolley",
+        "name": "Old Town Trolley — Copley Square stop",
+        "address": "Copley Square / Trinity Church, Boston, MA 02116",
+        "city": "Boston",
+        "lat": 42.3499,
+        "lng": -71.0765,
+        "theme": "boston",
+        "kind": "meeting",
+        "notes": "Sun 9 Aug · all-day hop-on hop-off · start at any stop · nearest to hotel: Copley Square / Trinity Church (Back Bay loop) · show ticket to conductor",
+        "website": "https://www.trolleytours.com/boston"
       }
     ],
     "restaurants": [
@@ -382,19 +394,28 @@
       "id": "aug9",
       "date": "Sun 9 Aug",
       "weekday": "Sunday",
-      "where": "Boston",
-      "highlights": "Freedom Trail · Faneuil Hall · Piattini 7 PM",
+      "where": "Boston · hop-on trolley",
+      "highlights": "Old Town Trolley all day · Freedom Trail stops · Piattini 7 PM",
       "theme": "boston",
       "imageTheme": "boston",
-      "freeTime": "~Until 7 PM dinner",
+      "freeTime": "Trolley all day · dinner 7 PM",
       "dontMiss": [
+        {
+          "text": "★ Old Town Trolley — hop-on hop-off all day",
+          "mapQuery": "Old Town Trolley Copley Square Boston",
+          "address": "Copley Square / Trinity Church, Boston, MA 02116"
+        },
+        {
+          "text": "Nearest stop: Copley Square / Trinity Church",
+          "mapQuery": "Trinity Church Copley Square Boston"
+        },
         {
           "text": "★ Dinner — Piattini 7 PM",
           "address": "226 Newbury St, Boston, MA 02116",
           "mapQuery": "Piattini 226 Newbury St Boston"
         },
         {
-          "text": "★ Freedom Trail (2.5 mi)",
+          "text": "★ Freedom Trail highlights via trolley stops",
           "mapQuery": "Freedom Trail Boston",
           "address": "Boston Common, 139 Tremont St, Boston, MA"
         },
@@ -404,13 +425,9 @@
           "address": "4 Charles St, Boston, MA 02116"
         },
         {
-          "text": "Quincy Market lunch",
+          "text": "Quincy Market / Faneuil Hall stop",
           "mapQuery": "Quincy Market Boston",
           "address": "4 S Market St, Boston, MA 02109"
-        },
-        {
-          "text": "Beacon Hill cobblestones",
-          "mapQuery": "Acorn Street Beacon Hill Boston"
         }
       ],
       "rain": "Boston Tea Party Ships & Museum",
@@ -543,6 +560,20 @@
       "website": "https://www.atlanticfish.com/"
     },
     {
+      "id": "e-old-town-trolley",
+      "title": "Old Town Trolley — hop-on hop-off",
+      "dateLabel": "Sun 9 Aug",
+      "dayId": "aug9",
+      "start": "20260809090000",
+      "end": "20260809170000",
+      "location": "Old Town Trolley (any stop)",
+      "address": "Copley Square / Trinity Church, Boston, MA 02116",
+      "details": "All-day hop-on hop-off · start at any stop · nearest to hotel: Copley Square / Trinity Church · show ticket to conductor · dinner Piattini 7 PM",
+      "theme": "boston",
+      "mapQuery": "Old Town Trolley Copley Square Boston",
+      "website": "https://www.trolleytours.com/boston"
+    },
+    {
       "id": "e-piattini",
       "title": "Dinner — Piattini",
       "dateLabel": "Sun 9 Aug",
@@ -643,7 +674,8 @@
       "station-south": { "minutes": 25 },
       "station-logan": { "hint": "~25–35 min by rideshare or SL1 + walk" },
       "station-back-bay": { "minutes": 12 },
-      "meet-north-end-food": { "minutes": 28 }
+      "meet-north-end-food": { "minutes": 28 },
+      "meet-old-town-trolley": { "minutes": 10 }
     }
   },
   "transitByDay": {
@@ -660,8 +692,17 @@
       }
     ],
     "aug9": [
-      { "label": "MBTA — The T", "url": "https://www.mbta.com/", "note": "Subway & buses" },
-      { "label": "Freedom Trail map", "url": "https://www.thefreedomtrail.org/", "note": "Mostly walking" }
+      {
+        "label": "Old Town Trolley",
+        "url": "https://www.trolleytours.com/boston",
+        "note": "Hop-on hop-off all day · nearest stop Copley Square / Trinity Church"
+      },
+      { "label": "MBTA — The T", "url": "https://www.mbta.com/", "note": "Backup if you skip a trolley loop" },
+      {
+        "label": "Freedom Trail map",
+        "url": "https://www.thefreedomtrail.org/",
+        "note": "Walk segments between trolley stops"
+      }
     ],
     "aug10": [
       {

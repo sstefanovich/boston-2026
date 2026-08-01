@@ -21,6 +21,7 @@ const PLACE_WALK: Record<string, { minutes?: number; hint?: string }> = {
   'station-logan': { hint: '~25–35 min by rideshare or SL1 + walk' },
   'station-back-bay': { minutes: 12 },
   'meet-north-end-food': { minutes: 28 },
+  'meet-old-town-trolley': { minutes: 10 },
 };
 
 export function getWalkHintForPlace(place: Place): string | null {
