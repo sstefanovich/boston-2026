@@ -375,16 +375,6 @@
           "text": "★ Dinner — Atlantic Fish 7 PM",
           "address": "761 Boylston St, Boston, MA 02116",
           "mapQuery": "Atlantic Fish 761 Boylston St Boston"
-        },
-        {
-          "text": "Walk Boston Common at dusk",
-          "address": "139 Tremont St, Boston, MA 02111",
-          "mapQuery": "Boston Common"
-        },
-        {
-          "text": "Grab a cannoli on Hanover St",
-          "mapQuery": "Mike's Pastry Boston",
-          "address": "300 Hanover St, Boston, MA 02113"
         }
       ],
       "rain": "Museum of Fine Arts or New England Aquarium",
@@ -395,7 +385,7 @@
       "date": "Sun 9 Aug",
       "weekday": "Sunday",
       "where": "Boston · hop-on trolley",
-      "highlights": "Old Town Trolley all day · Freedom Trail stops · Piattini 7 PM",
+      "highlights": "Old Town Trolley all day · Piattini 7 PM",
       "theme": "boston",
       "imageTheme": "boston",
       "freeTime": "Trolley all day · dinner 7 PM",
@@ -413,21 +403,6 @@
           "text": "★ Dinner — Piattini 7 PM",
           "address": "226 Newbury St, Boston, MA 02116",
           "mapQuery": "Piattini 226 Newbury St Boston"
-        },
-        {
-          "text": "★ Freedom Trail highlights via trolley stops",
-          "mapQuery": "Freedom Trail Boston",
-          "address": "Boston Common, 139 Tremont St, Boston, MA"
-        },
-        {
-          "text": "★ Public Garden & swan boats",
-          "mapQuery": "Public Garden Boston",
-          "address": "4 Charles St, Boston, MA 02116"
-        },
-        {
-          "text": "Quincy Market / Faneuil Hall stop",
-          "mapQuery": "Quincy Market Boston",
-          "address": "4 S Market St, Boston, MA 02109"
         }
       ],
       "rain": "Boston Tea Party Ships & Museum",
@@ -437,11 +412,11 @@
       "id": "aug10",
       "date": "Mon 10 Aug",
       "weekday": "Monday",
-      "where": "North End · harbor · dinner",
-      "highlights": "North End Food Tour 12 PM · waterfront · Krasi dinner 6 PM",
+      "where": "North End · dinner",
+      "highlights": "North End Food Tour 12 PM · Krasi dinner 6 PM",
       "theme": "northend",
       "imageTheme": "northend",
-      "freeTime": "Before noon meetup · after tour ~3 PM · dinner 6 PM",
+      "freeTime": "Food tour noon–~3 PM · dinner 6 PM",
       "dontMiss": [
         {
           "text": "★ North End Food Experience Tour 12 PM",
@@ -451,17 +426,6 @@
         {
           "text": "Arrive 5–10 min early — show booking YPWZK2GG",
           "mapQuery": "Boston Public Market Blackstone St"
-        },
-        { "text": "★ Harborwalk stroll", "mapQuery": "Boston Harborwalk" },
-        {
-          "text": "USS Constitution",
-          "mapQuery": "USS Constitution Museum",
-          "address": "Charlestown Navy Yard, Boston, MA"
-        },
-        {
-          "text": "New England Aquarium",
-          "mapQuery": "New England Aquarium",
-          "address": "1 Central Wharf, Boston, MA 02110"
         },
         {
           "text": "★ Dinner — Krasi 6–8 PM",
@@ -476,20 +440,12 @@
       "id": "aug11",
       "date": "Tue 11 Aug",
       "weekday": "Tuesday",
-      "where": "Boston / Cambridge · dinner",
-      "highlights": "Fenway or Cambridge day · La Voile dinner 5:30 PM",
-      "theme": "cambridge",
-      "imageTheme": "cambridge",
-      "freeTime": "Day free · dinner 5:30 PM at hotel building",
+      "where": "Boston · dinner",
+      "highlights": "La Voile dinner 5:30 PM",
+      "theme": "boston",
+      "imageTheme": "boston",
+      "freeTime": "Open day until dinner 5:30 PM",
       "dontMiss": [
-        { "text": "Harvard Yard walk", "mapQuery": "Harvard Yard Cambridge", "address": "Cambridge, MA 02138" },
-        { "text": "MIT campus loop", "mapQuery": "MIT Stata Center Cambridge" },
-        {
-          "text": "Fenway Park tour or game",
-          "mapQuery": "Fenway Park Boston",
-          "address": "4 Jersey St, Boston, MA 02215"
-        },
-        { "text": "Red Sox gear on Lansdowne", "mapQuery": "Lansdowne Street Boston" },
         {
           "text": "★ Dinner — La Voile 5:30–7:30 PM",
           "mapQuery": "La Voile 261 Newbury St Boston",
@@ -510,23 +466,16 @@
       "freeTime": "Leave for Logan ~10:30 AM for 12:20 PM departure · check out by noon",
       "dontMiss": [
         {
-          "text": "★ UA1732 departs Logan 12:20 PM",
-          "address": "1 Harborside Dr, Boston, MA 02128",
-          "mapQuery": "Boston Logan Airport"
-        },
-        { "text": "Leave for Logan ~10:30 AM", "mapQuery": "Boston Logan Airport United departures" },
-        {
-          "text": "Check out by 12 PM",
+          "text": "★ Check out by 12 PM",
           "address": "261 Newbury St, Boston, MA 02116",
           "mapQuery": "Newbury Guest House"
         },
+        { "text": "★ Leave for Logan ~10:30 AM", "mapQuery": "Boston Logan Airport United departures" },
         {
-          "text": "Leave extra time for Logan security",
+          "text": "★ UA1732 departs Logan 12:20 PM",
           "address": "1 Harborside Dr, Boston, MA 02128",
           "mapQuery": "Boston Logan Airport"
-        },
-        { "text": "Last coffee at Thinking Cup or Tatte", "mapQuery": "Thinking Cup Boston" },
-        { "text": "Grab a lobster roll for the road", "mapQuery": "Pauli's North End Boston" }
+        }
       ]
     }
   ],

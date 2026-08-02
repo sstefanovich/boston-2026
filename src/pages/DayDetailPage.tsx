@@ -42,7 +42,7 @@ export function DayDetailPage() {
 
       {day.dontMiss.length > 0 && (
         <div className="card">
-          <h2><span className="star">★</span> Don&apos;t miss</h2>
+          <h2>Scheduled</h2>
           <ul className="dont-miss-list">
             {day.dontMiss.map((item) => (
               <DontMissItemRow key={item.text} item={item} />
@@ -111,10 +111,6 @@ export function DayDetailPage() {
           ))}
         </div>
       )}
-
-      <Link to="/dont-miss" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
-        More free-time ideas →
-      </Link>
     </>
   );
 }

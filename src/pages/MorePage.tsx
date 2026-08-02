@@ -8,13 +8,16 @@ import { openUrl } from '../utils/links';
 export function MorePage() {
   return (
     <>
-      <HeroBanner title="More" subtitle="Food · transit · links" image={CITY_IMAGES.food} theme="food" />
+      <HeroBanner title="More" subtitle="Links · food · checklist" image={CITY_IMAGES.food} theme="food" />
       <div className="card">
         <h2>Appearance</h2>
         <ThemeToggle />
       </div>
       <div className="card">
-        <h2>All sections</h2>
+        <h2>Quick links</h2>
+        <p className="page-lead" style={{ marginBottom: '0.75rem' }}>
+          Full menu is also in the top-left hamburger.
+        </p>
         {NAV_SECTIONS.map((s) => (
           <Link key={s.id} to={s.path} className="btn nav-link-btn">
             <NavIcon name={s.icon} size={20} /> {s.label}

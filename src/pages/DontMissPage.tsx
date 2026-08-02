@@ -7,9 +7,9 @@ import { mapsSearchUrl, openUrl } from '../utils/links';
 export function DontMissPage() {
   return (
     <>
-      <HeroBanner title="Don't Miss" subtitle="Free time & top picks" image={CITY_IMAGES.food} theme="food" />
+      <HeroBanner title="Don't Miss" subtitle="Booked plans & rain backups" image={CITY_IMAGES.food} theme="food" />
       <div className="card">
-        <p><span className="star">★</span> = must-do · Tap <strong>📍</strong> to open in Google Maps.</p>
+        <p>Scheduled items by day · Tap <strong>📍</strong> for maps · ☔ = rain backup</p>
       </div>
       {TIMELINE.map((day) => (
         <div key={day.id} className="card">
