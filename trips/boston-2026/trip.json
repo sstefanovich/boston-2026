@@ -311,48 +311,48 @@
   },
   "flights": [
     {
-      "id": "ua1117",
-      "flightNumber": "UA1117",
+      "id": "ua1606",
+      "flightNumber": "UA1606",
       "airline": "United",
-      "cabin": "Economy (L)",
+      "cabin": "Economy",
       "dayId": "aug8",
       "depart": {
         "airport": "ORD",
         "city": "Chicago, IL",
         "date": "2026-08-08",
-        "time": "09:20",
+        "time": "10:25",
         "timezone": "America/Chicago"
       },
       "arrive": {
         "airport": "BOS",
         "city": "Boston, MA",
         "date": "2026-08-08",
-        "time": "12:47",
+        "time": "14:02",
         "timezone": "America/New_York"
       },
-      "calendarEventId": "e-ua1117"
+      "calendarEventId": "e-ua1606"
     },
     {
-      "id": "ua1732",
-      "flightNumber": "UA1732",
+      "id": "ua472",
+      "flightNumber": "UA472",
       "airline": "United",
-      "cabin": "Economy (K)",
+      "cabin": "Economy",
       "dayId": "aug12",
       "depart": {
         "airport": "BOS",
         "city": "Boston, MA",
         "date": "2026-08-12",
-        "time": "12:20",
+        "time": "12:27",
         "timezone": "America/New_York"
       },
       "arrive": {
         "airport": "ORD",
         "city": "Chicago, IL",
         "date": "2026-08-12",
-        "time": "14:07",
+        "time": "14:20",
         "timezone": "America/Chicago"
       },
-      "calendarEventId": "e-ua1732"
+      "calendarEventId": "e-ua472"
     }
   ],
   "timeline": [
@@ -361,13 +361,13 @@
       "date": "Sat 8 Aug",
       "weekday": "Saturday",
       "where": "Boston — arrive",
-      "highlights": "UA1117 lands 12:47 PM · check-in 3 PM · Atlantic Fish 7 PM",
+      "highlights": "UA1606 lands 2:02 PM · check-in 3 PM · Atlantic Fish 7 PM",
       "theme": "travel",
       "imageTheme": "travel",
-      "freeTime": "After landing ~12:47 PM — Logan to Back Bay (~25–35 min) · hotel check-in 3 PM",
+      "freeTime": "After landing ~2:02 PM — Logan to Back Bay (~25–35 min) · hotel check-in 3 PM",
       "dontMiss": [
         {
-          "text": "★ UA1117 lands at Logan 12:47 PM",
+          "text": "★ UA1606 lands at Logan 2:02 PM",
           "address": "1 Harborside Dr, Boston, MA 02128",
           "mapQuery": "Boston Logan Airport"
         },
@@ -460,10 +460,10 @@
       "date": "Wed 12 Aug",
       "weekday": "Wednesday",
       "where": "Depart Boston",
-      "highlights": "Check out noon · UA1732 departs 12:20 PM",
+      "highlights": "Check out noon · UA472 departs 12:27 PM",
       "theme": "travel",
       "imageTheme": "travel",
-      "freeTime": "Leave for Logan ~10:30 AM for 12:20 PM departure · check out by noon",
+      "freeTime": "Leave for Logan ~10:30 AM for 12:27 PM departure · check out by noon",
       "dontMiss": [
         {
           "text": "★ Check out by 12 PM",
@@ -472,7 +472,7 @@
         },
         { "text": "★ Leave for Logan ~10:30 AM", "mapQuery": "Boston Logan Airport United departures" },
         {
-          "text": "★ UA1732 departs Logan 12:20 PM",
+          "text": "★ UA472 departs Logan 12:27 PM",
           "address": "1 Harborside Dr, Boston, MA 02128",
           "mapQuery": "Boston Logan Airport"
         }
@@ -481,15 +481,15 @@
   ],
   "calendarEvents": [
     {
-      "id": "e-ua1117",
-      "title": "UA1117 — ORD → BOS",
+      "id": "e-ua1606",
+      "title": "UA1606 — ORD → BOS",
       "dateLabel": "Sat 8 Aug",
       "dayId": "aug8",
-      "start": "20260808124700",
-      "end": "20260808140000",
+      "start": "20260808140200",
+      "end": "20260808153000",
       "location": "Boston Logan (BOS)",
       "address": "1 Harborside Dr, Boston, MA 02128",
-      "details": "United Economy (L) · departed Chicago ORD 9:20 AM Central",
+      "details": "United · departs Chicago ORD 10:25 AM Central · arrives BOS 2:02 PM",
       "theme": "travel",
       "mapQuery": "Boston Logan Airport United arrivals",
       "website": "https://www.united.com/"
@@ -579,15 +579,15 @@
       "website": "https://www.lavoilerestaurants.com/la-voile-newbury/"
     },
     {
-      "id": "e-ua1732",
-      "title": "UA1732 — BOS → ORD",
+      "id": "e-ua472",
+      "title": "UA472 — BOS → ORD",
       "dateLabel": "Wed 12 Aug",
       "dayId": "aug12",
       "start": "20260812103000",
-      "end": "20260812122000",
+      "end": "20260812122700",
       "location": "Boston Logan (BOS)",
       "address": "1 Harborside Dr, Boston, MA 02128",
-      "details": "United Economy (K) · departs 12:20 PM · arrives ORD 2:07 PM Central",
+      "details": "United · departs 12:27 PM · arrives ORD 2:20 PM Central",
       "theme": "travel",
       "mapQuery": "Boston Logan Airport United departures",
       "website": "https://www.united.com/"
@@ -632,12 +632,12 @@
       {
         "label": "MBTA Trip Planner",
         "url": "https://www.mbta.com/trip-planner",
-        "note": "Silver Line SL1 from Logan after UA1117 lands"
+        "note": "Silver Line SL1 from Logan after UA1606 lands"
       },
       {
         "label": "Logan Airport",
         "url": "https://www.massport.com/logan-airport/",
-        "note": "UA1117 arrives 12:47 PM"
+        "note": "UA1606 arrives 2:02 PM"
       }
     ],
     "aug9": [
@@ -678,7 +678,7 @@
       {
         "label": "Logan Airport",
         "url": "https://www.massport.com/logan-airport/",
-        "note": "UA1732 departs 12:20 PM — leave ~10:30 AM"
+        "note": "UA472 departs 12:27 PM — leave ~10:30 AM"
       },
       { "label": "MBTA to Logan", "url": "https://www.mbta.com/schedules/SL1/line", "note": "Silver Line SL1" }
     ]
@@ -787,7 +787,7 @@
     },
     {
       "name": "United",
-      "why": "UA1117 & UA1732 — mobile boarding pass & flight status",
+      "why": "UA1606 & UA472 — mobile boarding pass & flight status",
       "packageId": "com.united.mobile.android",
       "owners": "Flight lead"
     },

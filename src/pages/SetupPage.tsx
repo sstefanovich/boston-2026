@@ -15,10 +15,10 @@ export function SetupPage() {
         <h2>Flights</h2>
         <ul>
           <li>
-            <strong>Sat 8 Aug — UA1117</strong> Chicago (ORD) 9:20 AM → Boston (BOS) <strong>12:47 PM</strong> · United Economy (L)
+            <strong>Sat 8 Aug — UA1606</strong> Chicago (ORD) 10:25 AM → Boston (BOS) <strong>2:02 PM</strong>
           </li>
           <li>
-            <strong>Wed 12 Aug — UA1732</strong> Boston (BOS) <strong>12:20 PM</strong> → Chicago (ORD) 2:07 PM · United Economy (K)
+            <strong>Wed 12 Aug — UA472</strong> Boston (BOS) <strong>12:27 PM</strong> → Chicago (ORD) 2:20 PM
           </li>
         </ul>
         <p className="page-lead" style={{ marginTop: '0.65rem', marginBottom: 0 }}>

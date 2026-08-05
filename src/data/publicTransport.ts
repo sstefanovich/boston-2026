@@ -6,8 +6,8 @@ export interface TransitLink {
 
 export const TRANSIT_BY_DAY: Record<string, TransitLink[]> = {
   aug8: [
-    { label: 'MBTA Trip Planner', url: 'https://www.mbta.com/trip-planner', note: 'Silver Line SL1 from Logan after UA1117 lands' },
-    { label: 'Logan Airport', url: 'https://www.massport.com/logan-airport/', note: 'UA1117 arrives 12:47 PM' },
+    { label: 'MBTA Trip Planner', url: 'https://www.mbta.com/trip-planner', note: 'Silver Line SL1 from Logan after UA1606 lands' },
+    { label: 'Logan Airport', url: 'https://www.massport.com/logan-airport/', note: 'UA1606 arrives 2:02 PM' },
   ],
   aug9: [
     {
@@ -32,7 +32,7 @@ export const TRANSIT_BY_DAY: Record<string, TransitLink[]> = {
     { label: 'Fenway Park', url: 'https://www.mlb.com/redsox/ballpark', note: 'Green Line to Kenmore' },
   ],
   aug12: [
-    { label: 'Logan Airport', url: 'https://www.massport.com/logan-airport/', note: 'UA1732 departs 12:20 PM — leave ~10:30 AM' },
+    { label: 'Logan Airport', url: 'https://www.massport.com/logan-airport/', note: 'UA472 departs 12:27 PM — leave ~10:30 AM' },
     { label: 'MBTA to Logan', url: 'https://www.mbta.com/schedules/SL1/line', note: 'Silver Line SL1' },
   ],
 };
