@@ -22,14 +22,25 @@ export function SetupPage() {
           </li>
         </ul>
         <p className="page-lead" style={{ marginTop: '0.65rem', marginBottom: 0 }}>
-          Wed departure is tight with noon checkout — leave for Logan around 10:30 AM.
+          Wed: Steve, Sue, Connor &amp; Kristen meet for breakfast at <strong>8:45 AM</strong> already through security.
         </p>
+      </div>
+      <div className="card">
+        <h2>Trains — Lauren &amp; Jecen</h2>
+        <ul>
+          <li>
+            <strong>Sat 8 Aug</strong> Amtrak Downeaster arrives <strong>North Station 2:20 PM</strong> (from New Hampshire)
+          </li>
+          <li>
+            <strong>Tue 11 Aug</strong> Downeaster departs <strong>North Station 5:20 PM</strong>
+          </li>
+        </ul>
       </div>
       <div className="card">
         <h2>Getting there</h2>
         <ul>
           <li>Logan (BOS): Silver Line SL1 to South Station, taxi, or rideshare (~20–30 min downtown)</li>
-          <li>Amtrak arrives South Station or Back Bay — both on the T</li>
+          <li>Downeaster: North Station (Orange/Green Lines · Causeway St)</li>
           <li>Install the United app for boarding passes and gate updates</li>
         </ul>
       </div>

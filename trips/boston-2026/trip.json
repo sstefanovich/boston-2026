@@ -35,7 +35,7 @@
     "food": "/images/food.jpg",
     "fallout": "/images/boston.jpg"
   },
-  "members": ["Steve", "Sue", "Kristen"],
+  "members": ["Steve", "Sue", "Kristen", "Connor", "Lauren", "Jecen"],
   "expenseCategories": ["Meals", "Hotel", "Transport", "Activities", "Groceries", "Other"],
   "places": {
     "hotels": [
@@ -89,6 +89,18 @@
         "kind": "station",
         "notes": "Amtrak & commuter rail",
         "website": "https://www.amtrak.com/stations/bby"
+      },
+      {
+        "id": "station-north",
+        "name": "North Station",
+        "address": "120 Causeway St, Boston, MA 02114",
+        "city": "Boston",
+        "lat": 42.3656,
+        "lng": -71.0617,
+        "theme": "travel",
+        "kind": "station",
+        "notes": "Amtrak Downeaster · Lauren & Jecen Sat arrive / Tue depart · Orange & Green Lines · TD Garden",
+        "website": "https://www.amtrak.com/stations/bon"
       },
       {
         "id": "meet-north-end-food",
@@ -210,7 +222,7 @@
         "lng": -71.0827,
         "theme": "food",
         "kind": "restaurant",
-        "notes": "Tue 11 Aug · reservation 5:30–7:30 PM · French brasserie · same building as guest house",
+        "notes": "Tue 11 Aug · table for 4 at 7:00 PM · Steve, Sue, Connor, Kristen · French brasserie · same building as guest house",
         "phone": "+1 617-587-4200",
         "website": "https://www.lavoilerestaurants.com/la-voile-newbury/"
       }
@@ -361,15 +373,20 @@
       "date": "Sat 8 Aug",
       "weekday": "Saturday",
       "where": "Boston — arrive",
-      "highlights": "UA1606 lands 2:02 PM · check-in 3 PM · Atlantic Fish 7 PM",
+      "highlights": "UA1606 lands 2:02 PM · Lauren & Jecen train 2:20 PM · Atlantic Fish 7 PM",
       "theme": "travel",
       "imageTheme": "travel",
-      "freeTime": "After landing ~2:02 PM — Logan to Back Bay (~25–35 min) · hotel check-in 3 PM",
+      "freeTime": "Flights/train ~2 PM · hotel check-in 3 PM · dinner 7 PM",
       "dontMiss": [
         {
           "text": "★ UA1606 lands at Logan 2:02 PM",
           "address": "1 Harborside Dr, Boston, MA 02128",
           "mapQuery": "Boston Logan Airport"
+        },
+        {
+          "text": "★ Lauren & Jecen — Downeaster arrives North Station 2:20 PM",
+          "mapQuery": "North Station Boston",
+          "address": "120 Causeway St, Boston, MA 02114"
         },
         {
           "text": "★ Dinner — Atlantic Fish 7 PM",
@@ -440,14 +457,19 @@
       "id": "aug11",
       "date": "Tue 11 Aug",
       "weekday": "Tuesday",
-      "where": "Boston · dinner",
-      "highlights": "La Voile dinner 5:30 PM",
+      "where": "Boston · dinner · train",
+      "highlights": "Lauren & Jecen Downeaster 5:20 PM · La Voile 7:00 PM",
       "theme": "boston",
       "imageTheme": "boston",
-      "freeTime": "Open day until dinner 5:30 PM",
+      "freeTime": "Open day · train 5:20 PM · dinner 7:00 PM",
       "dontMiss": [
         {
-          "text": "★ Dinner — La Voile 5:30–7:30 PM",
+          "text": "★ Lauren & Jecen — Downeaster departs North Station 5:20 PM",
+          "mapQuery": "North Station Boston",
+          "address": "120 Causeway St, Boston, MA 02114"
+        },
+        {
+          "text": "★ Dinner — La Voile 7:00 PM (table for 4 · Steve, Sue, Connor, Kristen)",
           "mapQuery": "La Voile 261 Newbury St Boston",
           "address": "261 Newbury St, Boston, MA 02116"
         }
@@ -460,17 +482,21 @@
       "date": "Wed 12 Aug",
       "weekday": "Wednesday",
       "where": "Depart Boston",
-      "highlights": "Check out noon · UA472 departs 12:27 PM",
+      "highlights": "Airport breakfast 8:45 AM · UA472 departs 12:27 PM",
       "theme": "travel",
       "imageTheme": "travel",
-      "freeTime": "Leave for Logan ~10:30 AM for 12:27 PM departure · check out by noon",
+      "freeTime": "Check out early · breakfast 8:45 through security · UA472 12:27 PM",
       "dontMiss": [
         {
-          "text": "★ Check out by 12 PM",
+          "text": "★ Check out (leave early for Logan)",
           "address": "261 Newbury St, Boston, MA 02116",
           "mapQuery": "Newbury Guest House"
         },
-        { "text": "★ Leave for Logan ~10:30 AM", "mapQuery": "Boston Logan Airport United departures" },
+        {
+          "text": "★ Breakfast 8:45 AM — Steve, Sue, Connor, Kristen (through security)",
+          "mapQuery": "Boston Logan Airport United",
+          "address": "1 Harborside Dr, Boston, MA 02128"
+        },
         {
           "text": "★ UA472 departs Logan 12:27 PM",
           "address": "1 Harborside Dr, Boston, MA 02128",
@@ -493,6 +519,20 @@
       "theme": "travel",
       "mapQuery": "Boston Logan Airport United arrivals",
       "website": "https://www.united.com/"
+    },
+    {
+      "id": "e-train-arrive",
+      "title": "Downeaster arrives — Lauren & Jecen",
+      "dateLabel": "Sat 8 Aug",
+      "dayId": "aug8",
+      "start": "20260808142000",
+      "end": "20260808150000",
+      "location": "North Station",
+      "address": "120 Causeway St, Boston, MA 02114",
+      "details": "Lauren & Jecen · Amtrak Downeaster from New Hampshire · arrives North Station 2:20 PM",
+      "theme": "travel",
+      "mapQuery": "North Station Boston",
+      "website": "https://www.amtrak.com/stations/bon"
     },
     {
       "id": "e-atlantic",
@@ -569,25 +609,53 @@
       "title": "Dinner — La Voile",
       "dateLabel": "Tue 11 Aug",
       "dayId": "aug11",
-      "start": "20260811173000",
-      "end": "20260811193000",
+      "start": "20260811190000",
+      "end": "20260811210000",
       "location": "La Voile",
       "address": "261 Newbury St, Boston, MA 02116",
-      "details": "Reservation 5:30–7:30 PM · French brasserie · same building as Newbury Guest House",
+      "details": "Table for 4 at 7:00 PM · Steve, Sue, Connor, Kristen · French brasserie · same building as Newbury Guest House",
       "theme": "food",
       "mapQuery": "La Voile 261 Newbury St Boston",
       "website": "https://www.lavoilerestaurants.com/la-voile-newbury/"
+    },
+    {
+      "id": "e-train-depart",
+      "title": "Downeaster departs — Lauren & Jecen",
+      "dateLabel": "Tue 11 Aug",
+      "dayId": "aug11",
+      "start": "20260811150000",
+      "end": "20260811152000",
+      "location": "North Station",
+      "address": "120 Causeway St, Boston, MA 02114",
+      "details": "Lauren & Jecen · Amtrak Downeaster to New Hampshire · departs North Station 5:20 PM · arrive station early",
+      "theme": "travel",
+      "mapQuery": "North Station Boston",
+      "website": "https://www.amtrak.com/stations/bon"
+    },
+    {
+      "id": "e-airport-breakfast",
+      "title": "Airport breakfast (through security)",
+      "dateLabel": "Wed 12 Aug",
+      "dayId": "aug12",
+      "start": "20260812084500",
+      "end": "20260812094500",
+      "location": "Boston Logan (BOS)",
+      "address": "1 Harborside Dr, Boston, MA 02128",
+      "details": "Steve, Sue, Connor, Kristen · meet 8:45 AM already through security · before UA472",
+      "theme": "food",
+      "mapQuery": "Boston Logan Airport United",
+      "website": "https://www.massport.com/logan-airport/"
     },
     {
       "id": "e-ua472",
       "title": "UA472 — BOS → ORD",
       "dateLabel": "Wed 12 Aug",
       "dayId": "aug12",
-      "start": "20260812103000",
+      "start": "20260812100000",
       "end": "20260812122700",
       "location": "Boston Logan (BOS)",
       "address": "1 Harborside Dr, Boston, MA 02128",
-      "details": "United · departs 12:27 PM · arrives ORD 2:20 PM Central",
+      "details": "United · departs 12:27 PM · arrives ORD 2:20 PM Central · breakfast meetup 8:45 AM through security",
       "theme": "travel",
       "mapQuery": "Boston Logan Airport United departures",
       "website": "https://www.united.com/"
@@ -623,6 +691,7 @@
       "station-south": { "minutes": 25 },
       "station-logan": { "hint": "~25–35 min by rideshare or SL1 + walk" },
       "station-back-bay": { "minutes": 12 },
+      "station-north": { "hint": "~20–25 min by Orange Line or rideshare to North Station" },
       "meet-north-end-food": { "minutes": 28 },
       "meet-old-town-trolley": { "minutes": 10 }
     }
@@ -638,6 +707,11 @@
         "label": "Logan Airport",
         "url": "https://www.massport.com/logan-airport/",
         "note": "UA1606 arrives 2:02 PM"
+      },
+      {
+        "label": "North Station",
+        "url": "https://www.mbta.com/stops/place-north",
+        "note": "Lauren & Jecen Downeaster arrives 2:20 PM"
       }
     ],
     "aug9": [
@@ -668,19 +742,32 @@
     ],
     "aug11": [
       {
-        "label": "MBTA Red Line",
-        "url": "https://www.mbta.com/schedules/Red",
-        "note": "To Harvard / Kendall (MIT)"
+        "label": "North Station",
+        "url": "https://www.mbta.com/stops/place-north",
+        "note": "Lauren & Jecen Downeaster departs 5:20 PM"
       },
-      { "label": "Fenway Park", "url": "https://www.mlb.com/redsox/ballpark", "note": "Green Line to Kenmore" }
+      {
+        "label": "Amtrak Downeaster",
+        "url": "https://www.amtrakdowneaster.com/schedule/",
+        "note": "Confirm Tue 5:20 PM northbound"
+      },
+      {
+        "label": "MBTA Orange/Green",
+        "url": "https://www.mbta.com/",
+        "note": "To North Station from Back Bay"
+      }
     ],
     "aug12": [
       {
         "label": "Logan Airport",
         "url": "https://www.massport.com/logan-airport/",
-        "note": "UA472 departs 12:27 PM — leave ~10:30 AM"
+        "note": "Breakfast 8:45 through security · UA472 12:27 PM"
       },
-      { "label": "MBTA to Logan", "url": "https://www.mbta.com/schedules/SL1/line", "note": "Silver Line SL1" }
+      {
+        "label": "MBTA to Logan",
+        "url": "https://www.mbta.com/schedules/SL1/line",
+        "note": "Silver Line SL1 — leave hotel early"
+      }
     ]
   },
   "phrases": {
@@ -862,7 +949,7 @@
   ],
   "setup": {
     "heroSubtitle": "Logan · MBTA · North End reservations",
-    "flightsNote": "Wed departure is tight with noon checkout — leave for Logan around 10:30 AM.",
+    "flightsNote": "Wed: Steve, Sue, Connor & Kristen meet for breakfast at 8:45 AM already through security before UA472.",
     "gettingThere": [
       "Logan (BOS): Silver Line SL1 to South Station, taxi, or rideshare (~20–30 min downtown)",
       "Amtrak arrives South Station or Back Bay — both on the T",

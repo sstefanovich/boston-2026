@@ -8,6 +8,11 @@ export const TRANSIT_BY_DAY: Record<string, TransitLink[]> = {
   aug8: [
     { label: 'MBTA Trip Planner', url: 'https://www.mbta.com/trip-planner', note: 'Silver Line SL1 from Logan after UA1606 lands' },
     { label: 'Logan Airport', url: 'https://www.massport.com/logan-airport/', note: 'UA1606 arrives 2:02 PM' },
+    {
+      label: 'North Station',
+      url: 'https://www.mbta.com/stops/place-north',
+      note: 'Lauren & Jecen Downeaster arrives 2:20 PM',
+    },
   ],
   aug9: [
     {
@@ -28,12 +33,17 @@ export const TRANSIT_BY_DAY: Record<string, TransitLink[]> = {
     { label: 'Boston Harbor ferries', url: 'https://www.bostonharborcruises.com/', note: 'Optional harbor cruise' },
   ],
   aug11: [
-    { label: 'MBTA Red Line', url: 'https://www.mbta.com/schedules/Red', note: 'To Harvard / Kendall (MIT)' },
-    { label: 'Fenway Park', url: 'https://www.mlb.com/redsox/ballpark', note: 'Green Line to Kenmore' },
+    {
+      label: 'North Station',
+      url: 'https://www.mbta.com/stops/place-north',
+      note: 'Lauren & Jecen Downeaster departs 5:20 PM',
+    },
+    { label: 'Amtrak Downeaster', url: 'https://www.amtrakdowneaster.com/schedule/', note: 'Confirm Tue 5:20 PM northbound' },
+    { label: 'MBTA Orange/Green', url: 'https://www.mbta.com/', note: 'To North Station from Back Bay' },
   ],
   aug12: [
-    { label: 'Logan Airport', url: 'https://www.massport.com/logan-airport/', note: 'UA472 departs 12:27 PM — leave ~10:30 AM' },
-    { label: 'MBTA to Logan', url: 'https://www.mbta.com/schedules/SL1/line', note: 'Silver Line SL1' },
+    { label: 'Logan Airport', url: 'https://www.massport.com/logan-airport/', note: 'Breakfast 8:45 through security · UA472 12:27 PM' },
+    { label: 'MBTA to Logan', url: 'https://www.mbta.com/schedules/SL1/line', note: 'Silver Line SL1 — leave hotel early' },
   ],
 };
 
